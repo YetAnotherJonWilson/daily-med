@@ -2,14 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import {Provider} from 'react-redux';
-import configureStore from './store/configure-store';
 
-const store = configureStore();
+import C from './constants'
+import { goals, dailyTasks }from './initialState.json'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <App />,
   document.getElementById('root')
 );
+
+console.log(`
+
+             Goals
+  =============================
+  The initial goal is "${goals}"
+  There are ${dailyTasks.length} tasks in state
+  
+  Constants (actions)
+  -------------------
+  ${Object.keys(C).join('\n  ')}
+  
+`)
