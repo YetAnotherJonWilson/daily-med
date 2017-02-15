@@ -4,7 +4,7 @@ import App from './App';
 import './index.css';
 
 import C from './constants'
-import { goals, dailyTasks }from './initialState.json'
+import { sessions, miniMeditations }from './initialState.json'
 
 ReactDOM.render(
   <App />,
@@ -13,10 +13,10 @@ ReactDOM.render(
 
 console.log(`
 
-             Goals
+             Mini-sessions
   =============================
-  The initial goal is "${goals}"
-  There are ${dailyTasks.length} tasks in state
+  The initial sessions are "${sessions.firstSession}"
+  There are ${miniMeditations.length} mini-meditations in state
   
   Constants (actions)
   -------------------

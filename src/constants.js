@@ -1,6 +1,6 @@
 const constants = {
-    add_goal: "add_goal",
-    add_task: "add_task"
+    upload_mini_meditation: "upload-mini-meditation",
+    create_session: "create_session"
 }
 
 export default constants

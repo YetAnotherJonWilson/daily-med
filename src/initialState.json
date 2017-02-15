@@ -1,4 +1,4 @@
 {
-    "goals": "Do good",
-    "dailyTasks": ["git commit", "meditate", "do crossword"]
+    "miniMeditations": ["firstMeditation", "secondMeditation", "thirdMeditation"],
+    "sessions": {"firstSession": ["firstMeditation", "secondMeditation"]}
 }
