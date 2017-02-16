@@ -4,22 +4,23 @@ import App from './App';
 import './index.css';
 
 import C from './constants'
-import { sessions, miniMeditations }from './initialState.json'
+import { upload_mini } from './store/reducers'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const state = 10
+
+const action = {
+    type: C.upload_mini_meditation,
+    payload: 15
+}
+
+const nextState = upload_mini(state, action)
+
+
 
 console.log(`
 
-             Mini-sessions
-  =============================
-  The initial sessions are "${sessions.firstSession}"
-  There are ${miniMeditations.length} mini-meditations in state
-  
-  Constants (actions)
-  -------------------
-  ${Object.keys(C).join('\n  ')}
+    initial mini_med: ${state}
+    action: ${JSON.stringify(action)}
+    new mini_med: ${nextState}
   
 `)
