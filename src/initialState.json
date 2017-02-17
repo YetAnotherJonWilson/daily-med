@@ -1,4 +1,4 @@
 {
-    "miniMeditations": ["firstMeditation", "secondMeditation", "thirdMeditation"],
-    "sessions": {"firstSession": ["firstMeditation", "secondMeditation"]}
+    "miniMeditations": ["locationOne", "locationTwo", "locationThree"],
+    "sessions": [{"firstSession": ["firstMeditation", "secondMeditation"]}]
 }

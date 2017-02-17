@@ -1,6 +1,6 @@
 const constants = {
-    upload_mini_meditation: "upload_mini_meditation",
-    create_session: "create_session"
+    UPLOAD_MINI_MEDITATION: "UPLOAD_MINI_MEDITATION",
+    CREATE_SESSION: "CREATE_SESSION"
 }
 
 export default constants

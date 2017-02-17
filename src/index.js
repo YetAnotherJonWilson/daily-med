@@ -6,11 +6,11 @@ import './index.css';
 import C from './constants'
 import { upload_mini } from './store/reducers'
 
-const state = 10
+const state = null
 
 const action = {
-    type: C.upload_mini_meditation,
-    payload: 15
+    type: C.UPLOAD_MINI_MEDITATION,
+    payload: "locationFour"
 }
 
 const nextState = upload_mini(state, action)
