@@ -6,6 +6,11 @@ import './index.css';
 import C from './constants'
 import { upload_mini } from './store/reducers'
 
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
+
 const state = null
 
 const action = {
