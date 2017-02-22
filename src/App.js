@@ -1,11 +1,10 @@
 import React from 'react'
-import Header from './Header'
+import ComponentList from './ComponentList'
 
 const App = () => {
     return (
         <div className="App">
-            <Header name="here"/>
-            <Header name="there"/>
+            <ComponentList />
         </div>
     )
 }

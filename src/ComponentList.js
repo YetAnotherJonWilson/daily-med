@@ -1,7 +1,9 @@
-import React, { component } from 'react'
+import React, { Component } from 'react'
 import Header from './Header'
+import './ComponentList.css'
 
 class ComponentList extends Component {
+
     render() {
         return (
             <div className="ComponentList">
@@ -11,4 +13,4 @@ class ComponentList extends Component {
         );
     }
 }
-export default HelloWorldList;
+export default ComponentList;
