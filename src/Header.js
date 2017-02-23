@@ -4,7 +4,7 @@ import './Header.css'
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {type: 'Header'};
+        this.state = {type: ['Header']};
         this.frenchify = this.frenchify.bind(this)
     }
 
