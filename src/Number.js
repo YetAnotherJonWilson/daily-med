@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
-import './Header.css'
+import './Number.css'
 
-class Header extends Component {
+class Number extends Component {
     constructor(props) {
         super(props);
-        this.state = {type: ['Header']};
+        this.state = {type: ['Number']};
         this.frenchify = this.frenchify.bind(this)
     }
 
     frenchify() {
-        this.setState({type: 'La tete'})
+        this.setState({type: 'Le nombre'})
     }
 
     render() {
     return (
-        <div className="Header">
+        <div className="Number">
             {this.state.type} {this.props.name}
             <br/>
             <button onClick={this.frenchify}>Frenchify</button>
@@ -22,4 +22,4 @@ class Header extends Component {
     )
 }}
 
-export default Header
+export default Number

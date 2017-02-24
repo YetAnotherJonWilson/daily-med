@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
-import Header from './Header'
+import Number from './Number'
 import './ComponentList.css'
 
 class ComponentList extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {location: ['Here', 'There', 'Everywhere']};
+        this.state = {number: ['One', 'Two', 'Three']};
     }
 
-    renderHeader() {
-        return this.state.location.map(location => (
-            <Header key={location} name={location}/>
+    renderGoal() {
+        return this.state.number.map(number => (
+            <Number key={number} name={number}/>
         ));
     }
 
     render() {
         return (
             <div className="ComponentList">
-                {this.renderHeader()}
+                {this.renderGoal()}
             </div>
         );
     }
