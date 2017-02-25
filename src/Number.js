@@ -17,7 +17,7 @@ class Number extends Component {
         <div className="Number">
             {this.state.type} {this.props.name}
             <br/>
-            <button onClick={this.frenchify}>Play File</button>
+            <button onClick={this.playFile}>Play File</button>
         </div>
     )
 }}
