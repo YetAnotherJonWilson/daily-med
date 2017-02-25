@@ -9,7 +9,7 @@ class ComponentList extends Component {
         this.state = {number: ['One', 'Two', 'Three']};
     }
 
-    renderGoal() {
+    renderFile() {
         return this.state.number.map(number => (
             <Number key={number} name={number}/>
         ));
@@ -18,7 +18,7 @@ class ComponentList extends Component {
     render() {
         return (
             <div className="ComponentList">
-                {this.renderGoal()}
+                {this.renderFile()}
             </div>
         );
     }

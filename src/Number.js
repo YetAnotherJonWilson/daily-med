@@ -4,20 +4,20 @@ import './Number.css'
 class Number extends Component {
     constructor(props) {
         super(props);
-        this.state = {type: ['Number']};
-        this.frenchify = this.frenchify.bind(this)
+        this.state = {type: ['File Number']};
+        // this.playFile = this.playFile.bind(this)
     }
 
-    frenchify() {
-        this.setState({type: 'Le nombre'})
-    }
+    // playFile() {
+    //
+    // }
 
     render() {
     return (
         <div className="Number">
             {this.state.type} {this.props.name}
             <br/>
-            <button onClick={this.frenchify}>Frenchify</button>
+            <button onClick={this.frenchify}>Play File</button>
         </div>
     )
 }}
