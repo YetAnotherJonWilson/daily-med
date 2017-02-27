@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-import C from './constants'
-import { upload_mini } from './store/reducers'
 
 ReactDOM.render(
     <App />,
@@ -19,13 +17,3 @@ const action = {
 }
 
 const nextState = upload_mini(state, action)
-
-
-
-console.log(`
-
-    initial mini_med: ${state}
-    action: ${JSON.stringify(action)}
-    new mini_med: ${nextState}
-  
-`)
